@@ -2,7 +2,7 @@
 section .data
 a:resd 1
 section .text
-golobal main
+global main
 main:
 	GET_UDEC 4,[a]
 	;deljenik edx:eax
@@ -12,7 +12,8 @@ main:
 	div ebx
 	cmp edx,0
 	jne skok1
-	jmp stampaj:
+        ; u ovom slucaju ne treba nista vise da radimo jer je izlaz spreman i nalazi se u eax
+	jmp stampaj
 skok1: mov ebx,3
 	mov eax,[a]
 	mul ebx
