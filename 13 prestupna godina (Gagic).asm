@@ -14,7 +14,7 @@ CMAIN:
     mov ecx, 4
     
     ;deljiv sa 4
-    idiv ecx
+    div ecx
     cmp edx, 0
     jne no
     ;nadalje znamo da je godina deljiva sa 4
@@ -26,7 +26,7 @@ CMAIN:
     mov ecx, 100
     
     ;deljiv sa 100
-    idiv ecx
+    div ecx
     cmp edx, 0
     jne yes
     ; nadalje znamo da je godina deljiva sa 100
@@ -38,7 +38,7 @@ CMAIN:
     mov ecx, 400
 
     ;deljiv sa 400
-    idiv ecx
+    div ecx
     cmp edx, 0
     jne no
 
