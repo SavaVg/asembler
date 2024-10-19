@@ -1,5 +1,5 @@
 %include "io.inc"
-section .data
+section .bss
 a:resw 1000
 n: resw 1
 section .text
